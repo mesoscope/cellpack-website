@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+.style__container--qJEJg {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+:root {
+    --smallScreenMaxWidth: 600px;
+    --largeScreenMinWidth: 1280px;
+}
+
+@custom-media --small-screen (max-width: 600px);
+@custom-media --medium-screen (max-width: 1280px);
+.style__container--1oS_N {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.style__title--2jSIW {
+    font-size-responsive: 16px 26px var(--smallScreenMaxWidth) var(--largeScreenMinWidth);
+}
+:root {
+  --typeface: 'Raleway', sans-serif;
+  --fontColor: rgb(102, 102, 102);
+}
+.style__container--2eGY4 {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    /* AICS theme*/
+    font-family: var(--typeface);
+    color: var(--fontColor);
+}
+
+.style__content-container--2weWR {
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 auto;
+}
+
+@media (--small-screen) {
+    .style__content-container--2weWR {
+        flex-direction: column;
+    }
+}
+
+.style__content--11OH4 {
+    flex: 1 0 auto;
+}
+
+.style__header--3rm0D {
+    flex: 0 0 auto;
+}
+
+.style__sidebar--3hAL0 {
+    flex: 0 0 auto;
+}
+
+@media (--small-screen) {
+    .style__sidebar--3hAL0 {
+        flex-basis: auto;
+    }
+}
+
